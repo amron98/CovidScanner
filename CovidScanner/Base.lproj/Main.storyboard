@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PKG-9O-55C">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--stats-->
+        <scene sceneID="ZGg-Nz-DL4">
+            <objects>
+                <tableViewController id="G0J-pf-LJo" customClass="CountryDataTableViewController" customModule="CovidScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vQQ-zr-2Dw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="kof-z5-KL5" customClass="TableCell" customModule="CovidScanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kof-z5-KL5" id="tgr-Ns-knb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxQ-ij-UeQ">
+                                            <rect key="frame" x="234" y="12" width="80" height="22.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="T0b-Oc-48s"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="deaths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azu-nS-Ebo">
+                                            <rect key="frame" x="328" y="11.5" width="63" height="22.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="63" id="NeE-I9-59n"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAg-QJ-wL6">
+                                            <rect key="frame" x="20" y="11.5" width="206" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="206" id="NV1-4H-aUC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="UAg-QJ-wL6" firstAttribute="leading" secondItem="tgr-Ns-knb" secondAttribute="leadingMargin" id="1A2-pT-vZz"/>
+                                        <constraint firstItem="Azu-nS-Ebo" firstAttribute="top" secondItem="tgr-Ns-knb" secondAttribute="topMargin" constant="0.5" id="8r7-81-BE9"/>
+                                        <constraint firstItem="UAg-QJ-wL6" firstAttribute="top" secondItem="tgr-Ns-knb" secondAttribute="topMargin" constant="0.5" id="KU3-YN-D6y"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Azu-nS-Ebo" secondAttribute="trailing" constant="3" id="Ovw-3w-QfH"/>
+                                        <constraint firstItem="xxQ-ij-UeQ" firstAttribute="top" secondItem="tgr-Ns-knb" secondAttribute="topMargin" constant="1" id="Qmu-cf-RrA"/>
+                                        <constraint firstItem="Azu-nS-Ebo" firstAttribute="top" secondItem="tgr-Ns-knb" secondAttribute="topMargin" constant="0.5" id="XQu-xq-h39"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Azu-nS-Ebo" secondAttribute="bottom" constant="-1" id="Xns-Yq-fO2"/>
+                                        <constraint firstItem="xxQ-ij-UeQ" firstAttribute="leading" secondItem="UAg-QJ-wL6" secondAttribute="trailing" constant="8" symbolic="YES" id="bpV-CQ-nlt"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xxQ-ij-UeQ" secondAttribute="bottom" constant="-1.5" id="iPe-U6-3oz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UAg-QJ-wL6" secondAttribute="bottom" constant="0.5" id="j4x-C6-h7x"/>
+                                        <constraint firstItem="Azu-nS-Ebo" firstAttribute="top" secondItem="tgr-Ns-knb" secondAttribute="topMargin" constant="0.5" id="m51-gG-5vE"/>
+                                        <constraint firstItem="Azu-nS-Ebo" firstAttribute="leading" secondItem="xxQ-ij-UeQ" secondAttribute="trailing" constant="14" id="qhT-NR-ALp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Azu-nS-Ebo" secondAttribute="bottom" constant="-1" id="wbx-5Y-0Zx"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Azu-nS-Ebo" secondAttribute="trailing" constant="3" id="x1j-1y-UEV"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Azu-nS-Ebo" secondAttribute="bottom" constant="-1" id="ycD-2V-sG4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cases" destination="xxQ-ij-UeQ" id="iel-aw-zuQ"/>
+                                    <outlet property="country" destination="UAg-QJ-wL6" id="Ylv-3U-mTH"/>
+                                    <outlet property="deaths" destination="Azu-nS-Ebo" id="t3C-mR-2cC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="G0J-pf-LJo" id="coB-zx-hOL"/>
+                            <outlet property="delegate" destination="G0J-pf-LJo" id="bY8-w1-owJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="stats" image="tablecells" catalog="system" selectedImage="tablecells.fill" id="PQx-2j-TEn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9x-Vp-SKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="1323"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hzf-RA-l2M">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PKG-9O-55C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zqS-Mr-mZp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G0J-pf-LJo" kind="relationship" relationship="viewControllers" id="400-GP-RJ4"/>
+                        <segue destination="f9H-Zt-tEd" kind="relationship" relationship="viewControllers" id="gCa-e3-3B7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcp-xv-LZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="498"/>
+        </scene>
+        <!--world map-->
+        <scene sceneID="zmy-Tv-4Vf">
+            <objects>
+                <viewController id="f9H-Zt-tEd" customClass="MapViewController" customModule="CovidScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tey-h1-EoN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7Kf-Vh-r7t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="world map" image="globe" catalog="system" selectedImage="globe" id="nY5-Ri-i9G"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAb-xz-J7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="1323"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="tablecells" catalog="system" width="128" height="93"/>
+        <image name="tablecells.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
